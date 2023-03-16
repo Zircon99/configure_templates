@@ -55,7 +55,7 @@ spec:
         allowedHosts: ['github.com']
         description: This is ${{ parameters.name }}
         repoUrl: ${{ parameters.repoUrl }}
-        token: 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
+        token: ${GITHUB_TOKEN}
 
     # The final step is to register our new component in the catalog.
     - id: register
